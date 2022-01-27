@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Picker</title>
+  </head>
+  <body>
+    <select id="hewan">
+      <option value="gorila">Gorilla</option>
+      <option value="gajah">Elephant</option>
+      <option value="beruang">Bear</option>
+      <option value="panda">Panda</option>
+      <option value="koala">Koala</option>
+      <option value="macan">Tiger</option>
+      <option value="zebra">Zebra</option>
+      <option value="kucing">Cat</option>
+      <option value="jerapah">Giraffe</option>
+    </select>
+    <button onclick="cetakGambar()">Print</button>
+    <img id="gambar" src="" />
+
+    <script>
+      function cetakGambar() {
+        const hewan = document.getElementById("hewan");
+        const gambar = document.getElementById("gambar");
+
+        if (hewan.value === "gorila") {
+          gambar.src =
+            "https://awsimages.detik.net.id/community/media/visual/2016/05/30/9b70078d-4fad-4325-b37f-d7e27801071c_11.jpg?w=700&q=90";
+        }
+
+        if (hewan.value === "gajah") {
+          gambar.src =
+            "https://gdb.voanews.com/5168E10B-1DE9-46B2-BD06-E5724ACD68ED_cx0_cy7_cw0_w1200_r1.jpg";
+        }
+
+        if (hewan.value === "beruang") {
+          gambar.src =
+            "http://asset-a.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/20920_beruang-grizzly-bisa-menghabiskan-180-kg-makanan-cari-tahu-rahasia-lainnya-yuk.jpg";
+        }
+
+        if (hewan.value === "panda") {
+          gambar.src =
+            "https://media.istockphoto.com/photos/giant-panda-baby-over-the-tree-picture-id475398353?k=20&m=475398353&s=612x612&w=0&h=Rosc-spY3916STtlf-Ri_YL-hz2gVt4uEAFd3AVdKC8=";
+        }
+
+        if (hewan.value === "koala") {
+          gambar.src =
+            "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_klook_water/activities/yhowqff8govzck5k5g6u/Tiket%20Masuk%20Umum%20Kuranda%20Koala%20Gardens%20di%20Cairns.jpg";
+        }
+
+        if (hewan.value === "macan") {
+          gambar.src =
+            "https://cdn0-production-images-kly.akamaized.net/0Wa2TkqiFccyRTrSUFG4_kzLb2M=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3095487/original/006469100_1586224913-20200407-Harimau-Corona-3.jpg";
+        }
+
+        if (hewan.value === "zebra") {
+          gambar.src =
+            "https://i1.wp.com/borobudurnews.com/wp-content/uploads/2021/11/Screenshot-213.png?fit=915%2C605&ssl=1";
+        }
+
+        if (hewan.value === "kucing") {
+          gambar.src =
+            "https://cdnt.orami.co.id/unsafe/cdn-cas.orami.co.id/parenting/images/6-hewan-peliharaan-yang-aman-un.width-800.jpegquality-80.jpg";
+        }
+
+        if (hewan.value === "jerapah") {
+          gambar.src =
+            "https://asset.kompas.com/crops/8rpb7fSHWMKM0XtvEpLyTcKmep0=/0x0:861x574/750x500/data/photo/2019/06/12/2474090245.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
